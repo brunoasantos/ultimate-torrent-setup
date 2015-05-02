@@ -1,0 +1,19 @@
+templates:
+  tv:
+    download: /data/torrent/watch/
+    configure_series:
+      from:
+        trakt_list:
+          username: username
+          password: password
+          list: tvshows
+          type: shows
+      settings:
+        propers: yes
+        timeframe: 24 hours
+        target: 720p+ hdtv+
+        identified_by: ep
+tasks:
+  torrentday_series:
+    rss: torrenday_rss_url
+    template: tv
